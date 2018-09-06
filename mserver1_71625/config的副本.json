@@ -1,0 +1,35 @@
+{
+	"RTSPServer": {
+		"Enable": true,
+		"Port": 8554,
+		"Param": null
+	},
+	"HTTPAPIServer": {
+		"Enable": true,
+		"Port": 8080,
+		"Param": null
+	},
+	"RTMPServer": {
+		"Enable": true,
+		"Port": 1935,
+		"Param": null
+	},
+	"GB28181Server": {
+		"Enable": false,
+		"Port": 5060,
+		"Param": null
+	},
+	"LiveInputs": {
+		"t1": {
+			"StreamId": "t1",
+			"Uri": "rtsp://admin:admin123@192.168.6.72/cam/realmonitor?channel=1&subtype=0",
+			"Outputs": {
+				"rtsp": {
+					"Protocol": "rtsp",
+					"Enable": true,
+					"Param": null
+				}
+			}
+		}
+	}
+}
